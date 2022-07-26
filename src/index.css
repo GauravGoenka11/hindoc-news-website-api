@@ -3,7 +3,7 @@
 body{
     margin:0px;
     padding: 0px;
-    background-color: #000000;
+    background-color:#f4f4f4;
     font-family: 'Lato', sans-serif;
 }
 *{
@@ -28,21 +28,15 @@ input{
 }
 #main{
     width:100%;
-    height:768px;
+    height:518px;
     position: relative;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url('./images/banner.png');
     position: relative;
     z-index: 0;
+    background-color: #f4f4f4;
 }
 #main::before{
     position: absolute;
     content: "";
-    background: -moz-radial-gradient(center, ellipse cover, rgba(181, 8, 8, 0.38) 0%, rgba(0, 0, 0, 0.6) 100%);
-    background: -webkit-radial-gradient(center, ellipse cover, rgba(181, 8, 8, 0.38) 0%, rgba(0, 0, 0, 0.6) 100%);
-    background: radial-gradient(ellipse at center, rgba(181, 8, 8, 0.38) 0%, rgba(0, 0, 0, 0.6) 100%);
-    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#61b50808', endColorstr='#99000000',GradientType=1 );
     top: 0;
     left: 0;
     width: 100%;
@@ -58,7 +52,7 @@ nav{
 	top: 0;
 	width:100%;
 	z-index: 1;
-    background-color: transparent;
+    background-color: white;
     transition: 0.6s ease-in-out;
 }
 nav.active{
@@ -67,6 +61,8 @@ nav.active{
 }
 nav ul{
 	display: flex;
+    margin-bottom: 0;
+    margin-top: 0;
 }
 .active{
     background-color: #FF1414;
@@ -84,57 +80,62 @@ nav ul li a{
     font-family: 'Lato';
 	height:40px;
 	line-height: 43px;
-	margin: 3px;
-	padding: 0px 22px;
+	margin: 10px;
 	display: flex;
 	font-size: 0.9rem;
-	text-transform: uppercase;
 	font-weight: 500;
-	color:#ffffff;
-    letter-spacing: 1px;
-    border-radius: 3px;
-    transition: 0.2s ease-in-out;
-}
-nav ul li a:hover{
-	background-color: #FF1414;
-    color:#ffffff;
-	box-shadow: 5px 10px 30px rgba(255, 2, 2, 0.336);
-	transition: all ease 0.2s;
-}
+	color:#050505;
+   }
+
 nav .menu-btn,
 .menu-icon{
 		display:none;
 	}
 .name{
-    text-align: center;
 	font-family: 'Montserrat';
 	width: 900px;
 	position: absolute;
-    left: 50%;
-	top: 55%;
+    right: -29%;
+	top: 53%;
 	transform: translate(-50%,-55%);
+}
+.name-heading{
+    text-align: center;
 }
 .name span{
     color: #FF1414;
 }
 .name .details{
     font-size: 23px;
-    color: #c5c5c5;
+    color: #000000;
 }
 .name h2{
 	font-family:'Lato';
 	font-size: 2.7rem;
 	margin:0px;
 	letter-spacing: 2px;
-	color:#ffffff;
+	color:#000000;
 }
 .name h1{
 	font-family:'Lato';
 	font-size: 5rem;
 	margin:0px;
 	letter-spacing: 2px;
-	color:#ffffff;
+	color:#000000;
 }
+
+.news-image>img{
+    width:300px;
+    height:300px;
+    border:1px solid black;
+    margin-top: 100px;
+    margin-left: 20px;
+}
+
+hr{
+    margin-top: 83px!important;
+}
+
 .header-btns{
     display: flex;
     margin-top: 40px;
@@ -172,19 +173,68 @@ margin:auto;
 } */
 #features{
     width:100%;
-    height:120vh;
     box-sizing: border-box;
     font-family:'Lato';
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding-top: 40px ;
-    background-color: #000000;
+    background-color: #f4f4f4;
 }
 #features h1{
     color: #fff;
     font-size: 3rem;
+}
+.card-news{
+   background-color:  #f4f4f4!important;
+}
+.card-button{
+   width: 34%!important;
+   margin-left:67%;
+   margin-top :-52px!important;
+}
+
+.card-third{
+    margin-bottom: 55px;
+}
+.card-style {
+    margin-left: 7px!important;
+}
+
+.card-title{
+    text-align: center;
+}
+
+.card-hr{
+    margin-top: 0%!important;
+}
+
+.card-img-top>img{
+    width: 75%!important;
+}
+
+.card-img {
+    width: 800px!important;
+    height: 407px;
+}
+.background{
+    background-color: #f4f4f4;
+    margin-left: 20px;
+}
+
+.img-padding{
+    padding: 0px!important;;
+}
+
+    .last-card {
+        margin-left: 87px!important;
+        padding-top: 124px!important;
+        padding-bottom: 160px!important;
+    }
+
+.social-banner{
+    background-color: #d8f4f8;
+    padding:20px;
 }
 .a-container{
     display: flex;
@@ -193,8 +243,14 @@ margin:auto;
 
 
 }
+
+.image-corner{
+    width:100px;
+    height:100px;
+
+}
 .a-box{
-    background-color: #000000;
+    background-color: #ffffff;
     width:250px;
     height: 400px;
     margin: 20px;
@@ -203,18 +259,7 @@ margin:auto;
     transition: 0.4s ease-in-out;
     position: relative;
 }
-.a-b-img{
-    width: 100%;
-    height: 60%;
 
-}
-.a-b-img img{
-    padding: 15px;
-    margin-top: 40px;
-    width:100%;
-    height: 50%;
-
-}
 .a-box:hover{
     border: 1px solid #FF1414;
     box-shadow: 2px 2px 12px rgba(184, 0, 0, 0.445);
@@ -254,25 +299,16 @@ margin:auto;
     margin-top:15px ;
 }
 #offer{
-    padding-top: 30px;
+    padding: 30px;
     width:100%;
     height:768px;
     position: relative;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-image: url(images/offer.png);
+   
+    background-color: #ffffff;
     text-align: center;
 }
 
-.pr-heading{
-    text-align: center;
-	font-family:'Lato';
-	width: 600px;
-	position: absolute;
-    left: 50%;
-	top: 55%;
-	transform: translate(-50%,-55%);
-}
+
 .pr-heading span{
     color: #FF1414;
 }
@@ -287,8 +323,7 @@ margin:auto;
 	font-family:'Lato';
 	font-size: 4rem;
 	margin:0px;
-	letter-spacing: 2px;
-	color:#ffffff;
+	color:#000000;
 }
 .pr-btns{
     display: flex;
@@ -418,7 +453,7 @@ margin:auto;
 		background-size: 1150px !important;
 		
 	}
-	.name{
+	/* /* .name{
 		left: 50%;
 		top: 50%;
         transform: translate(-50%,-50%);
@@ -432,7 +467,7 @@ margin:auto;
     }
     .name .details{
         font-size: 1rem;
-    }
+    } */
     .pr-heading{
 		left: 50%;
 		top: 50%;
@@ -540,10 +575,8 @@ margin:auto;
         .menu{
             display:none;
             position:absolute;
-            top:65px;
             left:0px;
-            background-color:#000000;
-            border-bottom:4px solid #FF1414;
+            background-color:#ffffff;
             width:100%;
             padding:0px;
             margin:0px;
@@ -551,15 +584,7 @@ margin:auto;
         .menu li{
             width:100%;
         }
-        nav .menu li a{
-            width:100%;
-            height:40px;
-            justify-content: center;
-            align-items: center;
-            margin:0px;
-            padding: 25px;
-            border:1px solid rgba(38,38,38,0.03);
-        }
+       
         nav .menu-icon{
             cursor:pointer;
             float:right;
